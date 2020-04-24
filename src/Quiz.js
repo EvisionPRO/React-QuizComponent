@@ -14,7 +14,7 @@ class Quiz extends Component {
     console.log(quizData);
     return (
       <div className="QuizQuestion">
-        <span>{quizData.quiz_questions[quiz_position].instruction_text}</span>
+        {quizData.quiz_questions[quiz_position].instruction_text}
       </div>
     );
   }
