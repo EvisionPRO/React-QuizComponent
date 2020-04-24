@@ -13,8 +13,10 @@ class Quiz extends Component {
     const { quiz_position } = this.state;
     console.log(quizData);
     return (
-      <div className="QuizQuestion">
-        {quizData.quiz_questions[quiz_position].instruction_text}
+      <div>
+        <div className="QuizQuestion">
+          {quizData.quiz_questions[quiz_position].instruction_text}
+        </div>
       </div>
     );
   }
